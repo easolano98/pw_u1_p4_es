@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/estiloCalculadoraTarea.css" />
+    <title>Tarea Calculadora</title>
+    <script src="../js/calculadoraTarea.js"></script>
+  </head>
+
+  <body>
+    <div>
+      <header><h1>Mi Calculadora</h1></header>
+      <nav></nav>
+      <section>
+        <div>
+          <label for="numero">Seleccione Numero</label><br />
+          <label id="numero" for="numero" class="pantalla"></label><br />
+        </div>
+        <div id="agrupar">
+          <div>
+            <button onclick="ingresarValor('1')">1</button>
+            <button onclick="ingresarValor('2')">2</button>
+            <button onclick="ingresarValor('3')">3</button>
+            <button onclick="limpiar('*')">x</button>
+          </div>
+          <div>
+            <button onclick="ingresarValor('4')">4</button>
+            <button onclick="ingresarValor('5')">5</button>
+            <button onclick="ingresarValor('6')">6</button>
+            <button onclick="limpiar('/')">/</button>
+          </div>
+          <div>
+            <button onclick="ingresarValor('7')">7</button>
+            <button onclick="ingresarValor('8')">8</button>
+            <button onclick="ingresarValor('9')">9</button>
+            <button onclick="limpiar('+')">+</button>
+          </div>
+          <div>
+            <button onclick="borrar()">del</button>
+            <button onclick="ingresarValor('0')">0</button>
+            <button onclick="operacion()">=</button>
+            <button onclick="limpiar('-')">-</button>
+          </div>
+        </div>
+      </section>
+      <footer></footer>
+    </div>
+  </body>
+</html>
